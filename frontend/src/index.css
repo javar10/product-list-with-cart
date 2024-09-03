@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Red Hat';
+  src: url('/src/assets/fonts/RedHatText-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'Red Hat Italic';
+  src: url('/src/assets/fonts/RedHatText-Italic-VariableFont_wght.ttf');
+}
+
+:root {
+  --red: #C73B0F;
+  --rose900: #260F08;
+  --rose500: #87635A;
+  --rose400: #AD8A85;
+  --rose300: #CAAFA7;
+  --rose100: #F5EEEC;
+  --rose50: #FCF8F6;
+  --green: #1EA575;
+  
+  --font-main: 'Red Hat', sans-serif;
+  --font-italic: 'Red Hat Italic', sans-serif;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--rose50);
+}
+
