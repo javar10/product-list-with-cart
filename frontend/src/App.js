@@ -6,8 +6,12 @@ function App() {
   console.log(data);
   return (
     <div className="App">
-      <h1>Desserts</h1>
-      {data.map(item => <DessertCard item={item}/>)}
+      <div className='main-desserts-div'>
+        <h1>Desserts</h1>
+        <div className='display-desserts-div'>
+          {data.map(item => <DessertCard className='dessert-card' item={item} />)}
+        </div>
+      </div>
     </div>
   );
 }

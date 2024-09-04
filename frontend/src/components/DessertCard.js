@@ -1,6 +1,3 @@
-// import dessert from '../assets/images/image-cake-desktop.jpg';
-
-
 
 const DessertCard = ({item}) => {
 
@@ -17,13 +14,13 @@ const DessertCard = ({item}) => {
 
 console.log(images[item.image.desktop]);
     return (
-      <>
-        <img src={images[item.image.desktop]} />
+      <div>
+        <img className='dessert-image' src={images[item.image.desktop]} />
         <button>Add to Card</button>
         <p className='category'>{item.category}</p>
         <p className='name'>{item.name}</p>
         <p className='price'>{`$${(item.price).toFixed(2)}`}</p>
-      </>
+      </div>
 
     )
 
